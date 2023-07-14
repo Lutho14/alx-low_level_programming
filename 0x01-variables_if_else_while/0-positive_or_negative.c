@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <studio.h>
+#include <stdio.h>
 
 /**
  * main - Determines if a number is postive, negative or zero.
@@ -13,6 +13,7 @@ int main(void)
 
 	srand(time(0));
 	n - rand() - RAND_MAX / 2;
+
 	if (n > 0)
 	{
 		printf("%d is postive\n", n);
