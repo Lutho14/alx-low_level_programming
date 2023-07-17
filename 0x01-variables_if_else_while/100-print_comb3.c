@@ -8,28 +8,22 @@
 
 int main(void)
 {
-	int num1 = '0';
-	int num2 = '0';
+	int d, p;
 
-	while (num1 <= '9')
+	for (d = '0'; d < '9'; d++)
 	{
-		while (num2 <= '9')
+		for (p = d + 1; p <= '9'; p++)
 		{
-			if (num1 < num2)
+			if (p != d)
 			{
-				putchar(num1);
-				putchar(num2);
-
-				if (num1 != '8' || (num1 != '8' && num2 != '9'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(d);
+				putchar(p);
+				if (d == '8' && p == '9')
+					continue;
+				putchar(',');
+				putchar(' ');
 			}
-			num2++;
 		}
-		num1++;
-		num2 = '0';
 	}
 	putchar('\n');
 	return (0);
