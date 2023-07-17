@@ -1,17 +1,25 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
+ *
  * Return: always 0
  */
 
 int main(void)
 {
-	char alp[52]
-		int i;
+	int lowercase = 'a';
+	int uppercase = 'A';
 
-	for (i = 0; i < 52; i++)
+	while (lowercase <= 'z')
 	{
-		putchar(alp(i));
+		putchar(lowercase);
+		lowercase += 1;
+	}
+	while (uppercase <= 'Z')
+	{
+		putchar(uppercase);
+		uppercase += 1;
 	}
 	putchar('\n');
 	return (0);
