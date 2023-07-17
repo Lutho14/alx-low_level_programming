@@ -8,24 +8,24 @@
 
 int main(void)
 {
-	int d, p, q;
+	int num1;
+	int num2;
+	int num3;
 
-	for (d = 0, d < 9; d++)
+	for (num1 = 0; num1 < 8; num1++)
 	{
-		for (p = d + 1; p <= 9; p++)
+		for (num2 = num1 + 1; num2 < 10; num2++)
 		{
-			for (q = p + 1; q <= 9; q++)
+			for (num3 = num2 + 1; num3 < 10; num3++)
 			{
-				if ((p != d) != q)
-				{
-					putchar(d);
-					putchar(p);
-					putchar(q);
-					if (d == 7 && p == 8)
-						continue;
-					putchar(',');
-					putchar(' ');
-				}
+				putchar((num1 % 10) + '0');
+				putchar((num2 % 10) + '0');
+				putchar((num3 % 10) + '0');
+
+				if (num1 == 7 && num2 == 8 && num3 == 9)
+					continue;
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
