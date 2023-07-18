@@ -1,9 +1,9 @@
 include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet_x10 - prints 10 times
  *
- * Return: always 0
+ * follwed by a new line
  */
 
 void print_alphabet_x10(void)
@@ -16,6 +16,7 @@ void print_alphabet_x10(void)
 	while (i < 10)
 	{
 		ch = 'z';
+
 		while (ch <= 'z')
 		{
 			_putchar(ch);
@@ -24,5 +25,4 @@ void print_alphabet_x10(void)
 		_putchar('\n');
 		i++;
 	}
-	return (0);
 }
