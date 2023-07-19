@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - prints 10 times
+ * print_alphabet_x10 - make alphebet x10 times
  *
- * follwed by a new line
+ * Return: void
  */
 
 void print_alphabet_x10(void)
@@ -11,7 +11,7 @@ void print_alphabet_x10(void)
 	int j;
 	int i;
 
-	i = '0';
+	i = 0;
 
 	while (i < 10)
 	{
