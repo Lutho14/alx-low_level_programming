@@ -2,7 +2,7 @@
 
 /**
  * print_line - checks draws a straight line in the terminal
- * @n: int to be checked, then number of times the character _ should be printed
+ * @n: the number of times the character _ should be printed
  */
 
 void print_line(int n)
