@@ -15,7 +15,7 @@ size_t print_listint(const listint_t *h)
 	{
 		printf("%d/n", h->n);
 		h = h->next;
-		num_rodes++;
+		num_nodes++;
 	}
-	return (num_rodes);
+	return (num_nodes);
 }
